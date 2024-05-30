@@ -1,0 +1,374 @@
+<html> 
+<head> 
+<title> 
+  Cursos
+ </title>
+<link rel="icon" href="https://www.dwgautocad.com/uploads/8/3/4/5/8345765/logo-udg-png-blanco-y-negro_orig.png " type="image/x-icon">
+</head>
+
+<style>
+
+body{
+      display:flex;
+      justify-content: center;
+      align-iitems: center;
+      min-height:100vh;
+      background-size:cover;
+
+     font-family:"Garamond";
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.menu{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow-x: hidden;
+    padding-top: 60px ;
+}
+
+.menu a{
+    padding: 40px;
+    display:block;
+    position: relative;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 900;
+}
+
+
+.menu a:before,
+.menu a:after {
+content: "";
+width: 250px;
+height: 100px;
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+transform: scale(0);
+transition: 0.5s;
+}
+.menu a:before {
+border-bottom: 2px solid #fffdfd;
+border-left: 2px solid #fcfcfc;
+transform-origin: 0 100%;
+}
+.menu a:after {
+border-top: 2px solid #e7e3e3;
+border-right: 2px solid #f5e6e6;
+transform-origin: 100% 0%;
+}
+.menu a:hover:after,
+.menu a:hover:before {
+transform: scale(1);
+}
+
+.logo img{
+    top:0px;
+    width: 400px;
+    height: 70px;
+}
+
+.contenido{
+    margin-left: 240px;
+    padding: 0 20px;
+}
+
+
+h1{
+    font-size: 6rem;
+    color: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.texto h1{
+ font-size: 80px;
+ line-height: 90px;
+ margin-left: 400px;
+ color:transparent;
+ -webkit-text-stroke: 1px #00000;
+ background: url(https://i.pinimg.com/originals/9d/df/0a/9ddf0a3254407417ab96b80d169f30fc.gif );
+ -webkit-background-clip: text;
+ background-clip: text;
+ background-position: 400 200;
+ animation:back 1s linear infinite;
+}
+
+font{
+    color: white;
+    position: relative;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 900px;
+  }
+  
+  .container .card{
+     position: relative;
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+     overflow: hidden;
+  } 
+  
+  .container .card .imgBx,
+  .container .card .contentBx{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     height: 100%;   
+  }
+  
+  .container .card .imgBx img{
+     position: relative;
+     top: 0; 
+      width: 100%;
+     height: 100%; 
+     object-fit: cover;   
+  }
+  
+  .container .card .contentBx::before{
+    content:"";
+    position: absolute;
+    top:0;
+     width: 100%;
+     height: 100%; 
+     background: #c7c2c2;
+    transform:scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin: right;
+    transition-delay: 0.5s;  
+  }
+  
+  .container .card:hover .contentBx::before{
+     transform: scaleX(1);
+     transition: transform 0.5s ease-in-out;
+     transform-origin:left;
+     transition-delay: 0s;
+  }
+  
+  .container .card .contentBx {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+  }
+  
+  .container .card .contentBx .content{
+    position:relative;
+    padding:10px;
+    z-index: 0;
+    transition: 0.5s;
+    transform: translateX(-300px);
+    transition-delay: 0s;
+  }
+  
+  .container .card:hover .contentBx .content{
+   transform: translateX(0px);
+   transition-delay:0.5s;
+  }
+  
+  .container .card .contentBx .content h3{
+    font-size:35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    
+  }
+  
+  .container .card .contentBx .content p {
+    font-size: 8px;
+    line-height: 1.4em;
+    font-weight: 30;
+    
+    
+  }
+
+
+</style>
+
+
+<body>
+
+   <nav class=" menu">  
+         <label class="logo"> 
+        <img src=" https://formacion.academicos.cucei.udg.mx/dist/imagenes/logo-cucei-udg-blanco.png"> 
+         </label>
+     <a href="index.html "> Inicio </a>
+     <a href="p1.html "> Acerca de <br> nosotros </a>
+     <a href="p2.html"> Cursos </a>
+     <a href="p3.html"> Contacto</a>
+  </nav>
+
+
+<main class="contenido">
+
+<div class= "texto">
+<h1> Cursos </h1>
+</div>
+
+  <table>
+       <tr>  
+         <td>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://www.tuproyectodevida.pe/wp-content/uploads/2023/04/especialidades-ingenieria-industrial-1200x628.jpg ">
+                     </div>
+                    <div class="contentBx">
+                      <div class= "content">
+                          <h3> Ingenieria industrial </h3>
+                          <p>
+             El aspirante a cursar la carrera de ingeniería industrial debe contar preferentemente con:
+            Intereses: Por descubrir nuevos hechos y resolver problemas, gusto por el cálculo, los sistemas, el trabajo con maquinas y herramientas, además de la utilización de técnicas administrativas.
+            Aptitudes: Cálculo matemático, alto sentido de organización, análisis y síntesis, trabajo con maquinas y herramientas, imaginación e inventiva, además de habilidades para entrevistar y tratar gente; promover y vender proyectos.
+            Actitudes: Estabilidad emocional, responsabilidad, constancia, paciencia, alto sentido de autoridad 
+                         </p>
+            
+                  </div>
+               </div>
+            </div>
+         </td>
+         <td>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://dondestudiar.org/wp-content/uploads/2021/10/ingenieria-informatica.jpg ">
+                     </div>
+                    <div class="contentBx">
+                      <div class= "content">
+                          <h3> Ingenieria informatica </h3>
+                          <p>
+                            El egresado de Ingeniería Informática, habrá adquirido competencias profesionales e intelectuales
+                             en los campos de Sistemas de Información, gestión de las tecnologías de la información, sistemas 
+                             robustos, paralelos, distribuidos y computación flexible (Soft Computing). Contará con las habilidades 
+                             para desarrollar algoritmos y su codificación; así como para administrar proyectos de Ingeniería de 
+                             Software; administrar redes locales y mundiales y servidores; o bien, orientarse hacia los campos de
+                              la investigación de la minería de datos y los sistemas basados en conocimientos.
+                         </p>
+            
+                  </div>
+               </div>
+            </div>
+         </td>
+         <td>
+            <div class="container">
+                <div class="card">
+                    <div class="imgBx">
+                        <img src="https://opinionpublica.uvm.mx/wp-content/uploads/2022/03/Ingenieria-biome%CC%81dica.jpg ">
+                     </div>
+                    <div class="contentBx">
+                      <div class= "content">
+                          <h3> Ingenieria biomedica </h3>
+                          <p>
+                            El egresado de Ingeniería Biomédica es un profesional de la tecnología médica
+                            que cuenta con conocimientos acerca de:
+                            Biomecánica, pues conoce las estructuras y funcionamiento mecánico del cuerpo humano para su modelado, modificación o reproducción de forma artificial.
+                            Procesamiento de señales electrofisiológicas, las cuales son utilizadas para estudiar y comprender los fenómenos fisiológicos del cuerpo en condiciones patológicas y no patológicas.
+                            Instrumentación médica, ya que sabe el principio de funcionamiento de los equipos médicos, permitiéndole desarrollar y mejorar herramientas o técnicas de detección, diagnóstico, tratamiento, pronóstico y prevención en el sector salud.
+                            Gestión, administración, mantenimiento y evaluación de los equipos y servicios médicos.
+                         </p>
+            
+                  </div>
+               </div>
+            </div>
+         </td>
+
+       </tr>
+
+
+
+       <tr>  
+        <td>
+           <div class="container">
+               <div class="card">
+                   <div class="imgBx">
+                       <img src="https://blogs.unitec.mx/hubfs/Imported_Blog_Media/trabajos-que-puedes-tener-si-estudias-ingenieria-robotica-3-compressor-Dec-17-2022-06-05-51-9337-PM.jpg ">
+                    </div>
+                   <div class="contentBx">
+                     <div class= "content">
+                         <h3> Ingenieria robotica </h3>
+                         <p>
+                            El egresado de la Ingeniería Robótica es un profesionista capacitado para desempeñarse en:
+
+                            El control de procesos industriales automatizados
+                            La implementación de sistemas robóticos de propósitos específicos
+                            Sistemas de manufactura flexibles
+                            El desarrollo para nuevas tecnologías en el campo de la robótica
+                        </p>
+           
+                 </div>
+              </div>
+           </div>
+        </td>
+        <td>
+           <div class="container">
+               <div class="card">
+                   <div class="imgBx">
+                       <img src="https://www.conamat.com/hubfs/fisica.jpg ">
+                    </div>
+                   <div class="contentBx">
+                     <div class= "content">
+                         <h3> Física </h3>
+                         <p>
+                            Capacidad y disposición para las matemáticas, destreza para análisis y resolución de problemas,
+                             creatividad y gusto por el trabajo en laboratorios, mente inquisitiva, imaginación e iniciativa 
+                             son características importantes en cualquier persona que planee ingresar a la carrera en física;
+                              en adición, habilidad en comunicación escrita y oral. Conocimientos en computación y el dominio 
+                              de un segundo idioma son deseables.
+                        </p>
+           
+                 </div>
+              </div>
+           </div>
+        </td>
+        <td>
+           <div class="container">
+               <div class="card">
+                   <div class="imgBx">
+                       <img src="https://cba.ucb.edu.bo/blog/wp-content/uploads/2021/04/quimico-adulto-mujer-belleza-caucasica-proteccion_151013-1823.jpg ">
+                    </div>
+                   <div class="contentBx">
+                     <div class= "content">
+                         <h3> Ingeniería Química </h3>
+                         <p>
+                            Los aspirantes a este programa educativo deberán contar, preferentemente, con las siguientes características:
+
+                            Dominio de conocimientos generales de matemáticas.
+                            Interés por las ciencias en general, el entorno y cómo se transforma la materia. 
+                        </p>
+           
+                 </div>
+              </div>
+           </div>
+        </td>
+
+      </tr>
+
+    </table>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,176 @@
+<html> 
+<head> 
+<title> 
+   Inicio
+ </title>
+<link rel="icon" href="https://www.dwgautocad.com/uploads/8/3/4/5/8345765/logo-udg-png-blanco-y-negro_orig.png " type="image/x-icon">
+</head>
+
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Garamond";
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.menu{
+ top:0;
+ left: 0;
+
+}
+
+.menu a{
+     padding-top: 30px ;
+    left: 100px;
+     padding: 30px;
+    display: inline-flex;
+    position: relative;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: justify;
+    font-weight: 900;
+}
+
+.menu a:before,
+.menu a:after {
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+transform: scale(0);
+transition: 0.5s;
+}
+.menu a:before {
+border-bottom: 2px solid #fffdfd;
+border-left: 2px solid #fcfcfc;
+transform-origin: 0 100%;
+}
+.menu a:after {
+border-top: 2px solid #e7e3e3;
+border-right: 2px solid #f5e6e6;
+transform-origin: 100% 0%;
+}
+.menu a:hover:after,
+.menu a:hover:before {
+transform: scale(1);
+}
+
+
+.logo img{
+    padding-top: 30px ;
+    width: 1200px;
+    height: 200px;
+}
+
+.contenido{
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenido img{
+   opacity:0.1;
+   height: 140vh;
+   width:100%;
+}
+
+.presentacion{
+    font-family:"castellar";
+    position:absolute;
+    left:660px;
+    width:2600px;
+    height:900px;
+    overflow:auto;
+    font-size: 100;
+}
+
+.presentacion:before,
+.presentacion:after {
+content: "";
+width: 1260px;
+height: 120px;
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+transform: scale(0);
+transition: 0.5s;
+}
+
+.presentacion:before {
+border-bottom: 2px solid #fffdfd;
+border-left: 2px solid #fcfcfc;
+transform-origin: 0 50%;
+}
+.presentacion:after {
+border-top: 2px solid #e7e3e3;
+border-right: 2px solid #f5e6e6;
+transform-origin: 50% 0%;
+}
+.presentacion:hover:after,
+.presentacion:hover:before {
+transform: scale(1);
+}
+
+
+
+.presentacion2{
+    font-family:"castellar";
+    position:absolute;
+    left:800px;
+    top:1750px;
+    width:800px;
+    height:200px;
+    overflow:auto;
+    font-size: 80;
+    text-align: center;
+}
+</style>
+
+
+<body>
+
+      <nav class=" menu">  
+         <label class="logo"> 
+        <img src="  https://formacion.academicos.cucei.udg.mx/dist/imagenes/logo-cucei-udg-blanco.png"> 
+         </label>
+     <a href="index.html "> Inicio </a>
+     <a href="p1.html "> Acerca de <br> nosotros </a>
+     <a href="p2.html"> Cursos </a>
+     <a href="p3.html"> Contacto</a>
+  </nav>
+
+
+<section>
+ <div class="contenido">
+<img src= "https://i.pinimg.com/originals/9b/67/b4/9b67b4e5299c980b2d6beaf7dc6958b4.gif">
+</section>
+
+<div class="presentacion"> 
+<font color=white> BIENVENIDOS A CUCEI </font>
+</div>
+<div class="presentacion2">
+<font color=white> Aprende más <br> sobre nosotros</font>
+</div>
+
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,166 @@
+<html> 
+<head> 
+<title> 
+  Contacto
+ </title>
+<link rel="icon" href="https://www.dwgautocad.com/uploads/8/3/4/5/8345765/logo-udg-png-blanco-y-negro_orig.png " type="image/x-icon">
+</head>
+
+<style>
+
+body{
+     font-family:"Garamond";
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+.menu{
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+   background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    overflow-x: hidden;
+    padding-top: 60px ;
+}
+
+.menu a{
+    padding: 40px;
+    display:block;
+    position: relative;
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 900;
+}
+
+
+.menu a:before,
+.menu a:after {
+content: "";
+width: 250px;
+height: 100px;
+position: absolute;
+top: 0;
+left: 0;
+box-sizing: border-box;
+transform: scale(0);
+transition: 0.5s;
+}
+.menu a:before {
+border-bottom: 2px solid #fffdfd;
+border-left: 2px solid #fcfcfc;
+transform-origin: 0 100%;
+}
+.menu a:after {
+border-top: 2px solid #e7e3e3;
+border-right: 2px solid #f5e6e6;
+transform-origin: 100% 0%;
+}
+.menu a:hover:after,
+.menu a:hover:before {
+transform: scale(1);
+}
+
+.logo img{
+    top:0px;
+    width: 400px;
+    height: 70px;
+}
+
+.contenido{
+    margin-left: 240px;
+    padding: 0 20px;
+}
+
+
+
+.contact {
+    padding: 5rem 6.5rem;
+    color: white;
+}
+
+.contact > p {
+    color: black;
+}
+
+h2 {
+    font-size: 10rem;
+}
+
+.free {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-text1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.email {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+:link{
+font-size:25px;
+  color: black;
+}
+
+:visited{
+font-size:25px;
+  color: #34495E;
+
+}
+:hover {
+  font-size:27px;
+  color:white;
+}
+
+</style>
+
+
+<body>
+
+   <nav class=" menu">  
+         <label class="logo"> 
+        <img src=" https://formacion.academicos.cucei.udg.mx/dist/imagenes/logo-cucei-udg-blanco.png"> 
+         </label>
+     <a href="index.html "> Inicio </a>
+     <a href="p1.html "> Acerca de <br> nosotros </a>
+     <a href="p2.html"> Cursos </a>
+     <a href="p3.html"> Contacto</a>
+  </nav>
+
+
+<main class="contenido">
+
+<section class="contact" id="contact">
+        <h2>Contacto</h2>
+        <p class="contact-text1">
+            Para saber más puedes contactarte a <span class="free"><a href="http://www.cucei.udg.mx/ ">Cucei.udg.mx</span>.</a>
+        </p>
+        <p class="email">
+             cinv@cucei.udg.mx
+        </p>
+    </section>
+
+
+</body>
+
+
+
+
+
+
+
+</html>
